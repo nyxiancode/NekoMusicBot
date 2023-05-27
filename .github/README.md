@@ -1,5 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━
-<h2 align="center">
+<h2>
 ──「 NekoMusicBot 」──
 </h2>
 <p align="center">
