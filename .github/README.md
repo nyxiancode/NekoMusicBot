@@ -1,7 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
-    ──「 NekoMusicBot 」──
+   
+──「 NekoMusicBot 」──
 </h2>
 
 <p align="center">
