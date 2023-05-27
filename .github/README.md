@@ -8,7 +8,7 @@
   <img src="[https://te.legra.ph/file/1f070ea3147e2a3ef44e4.jpg](https://telegra.ph/file/3b21a54c786b4958f265d.jpg)">
 </p>
 
-_**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ғᴀʟʟᴇɴ ✘ ᴍᴜsɪᴄ](https://t.me/FallenMusicBot)**_
+_**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
