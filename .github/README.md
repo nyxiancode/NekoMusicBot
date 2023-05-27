@@ -1,5 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━
-<h2 align="center">83
+<h2 align="center">
 ──「 NekoMusicBot 」──
 </h2>
 <p align="center">
