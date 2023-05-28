@@ -37,7 +37,7 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 <details>
 <summary><h3>
 - <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
-</h3>
+</h3></summary>
 
 - Get your [Necessary Variables](https://github.com/nekolocal/NekoMusicBot/blob/master/sample.env)
 - Upgrade and Update by :
@@ -66,7 +66,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 Press `Ctrl+b` and then `d`
 
 
-</details></summary>
+</details>
 
 ━━━━━━━━━━━━━━━━━━━━
 <h3 align="center">
