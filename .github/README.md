@@ -37,7 +37,7 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 <details>
 <summary><h3>
 - <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
-</h3></summary>
+</summary></h3>
 
 - Get your [Necessary Variables](https://github.com/nekolocal/NekoMusicBot/blob/master/sample.env)
 - Upgrade and Update by :
