@@ -1,0 +1,83 @@
+{
+  "name": "NekoMusicBot",
+  "description": "Telegram bot music",
+  "stack": "heroku-22",
+  "env": { 
+    "API_ID": {
+      "description": "Dapatkan API ID di web my.telegram.org Masukan yg APP ID Telegram",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan API Hash di web my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Dapatkan bot token di » @BotFather",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Default 120",
+      "value": "120",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Dapatkan id » https://t.me/MissRose_bot send /id di chat",
+      "required": true
+    },
+    "PING_IMG": {
+      "description": "Ping image bot",
+      "value": "https://telegra.ph/file/c9edc56d1d48a6be8ff29.jpg",
+      "required": false
+    },
+    "START_IMG": {
+      "description": "Start Image bot",
+      "value": "https://telegra.ph/file/3b21a54c786b4958f265d.jpg",
+      "required": false
+    },
+    "SESSION": {
+      "required": false
+    },
+    "SUDO_USERS": {
+      "description": "use your own or leave it like this",
+      "value": "5633222043",
+      "required": false
+    },
+    "SUPPORT_CHAT": {
+      "value": "https://t.me/NekoMenfessChat",
+      "required": false
+    },
+    "SUPPORT_CHANNEL": {
+      "value": "https://t.me/SayaNeko",
+      "required": false
+    },
+    "START_IMG": {
+      "description": "Start Image bot",
+      "value": "https://telegra.ph/file/3b21a54c786b4958f265d.jpg",
+      "required": false
+    },
+    "FAILED": {
+      "description": "Failed Image bot",
+      "value": "https://telegra.ph/file/4c896584b592593c00aa8.jpg",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
