@@ -76,7 +76,7 @@ async def play(_, message: Message):
         try:
             get = await app.get_chat_member(message.chat.id, ASS_ID)
         except ChatAdminRequired:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
@@ -90,7 +90,7 @@ async def play(_, message: Message):
                     ]
                 ]
             )
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 text=f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ {message.chat.title}\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_MENTION}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}\n\nᴘʟᴇᴀsᴇ ᴜɴʙᴀɴ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴀɴᴅ ᴘʟᴀʏ ᴀɢᴀɪɴ...",
                 reply_markup=unban_butt,
             )
@@ -105,28 +105,28 @@ async def play(_, message: Message):
             try:
                 invitelink = await app.export_chat_invite_link(message.chat.id)
             except ChatAdminRequired:
-                return await fallen.edit_text(
+                return await neko.edit_text(
                     f"» ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs ᴠɪᴀ ʟɪɴᴋ ғᴏʀ ɪɴᴠɪᴛɪɴɢ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
                 )
             except Exception as ex:
-                return await fallen.edit_text(
+                return await neko.edit_text(
                     f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
                 )
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
-        anon = await fallen.edit_text(
+        anon = await neko.edit_text(
             f"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nɪɴᴠɪᴛɪɴɢ {ASS_NAME} ᴛᴏ {message.chat.title}."
         )
         try:
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
-            await fallen.edit_text(
+            await neko.edit_text(
                 f"{ASS_NAME} ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
             )
         except UserAlreadyParticipant:
             pass
         except Exception as ex:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
             )
         try:
@@ -169,17 +169,17 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await fallen.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
+            return await neko.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
-        await fallen.edit_text("🔎")
+            return await neko.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
+        await neko.edit_text("🔎")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -195,10 +195,10 @@ async def play(_, message: Message):
 
         except Exception as e:
             LOGGER.error(str(e))
-            return await fallen.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
+            return await neko.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
 
         if (dur / 60) > DURATION_LIMIT:
-            return await fallen.edit(
+            return await neko.edit(
                 f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
             )
         file_path = audio_dl(url)
@@ -217,7 +217,7 @@ async def play(_, message: Message):
             ruser,
             message.from_user.id,
         )
-        position = len(fallendb.get(message.chat.id))
+        position = len(nekodb.get(message.chat.id))
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
@@ -234,15 +234,15 @@ async def play(_, message: Message):
             )
 
         except NoActiveGroupCall:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 "**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
             )
         except TelegramServerError:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 "» ᴛᴇʟᴇɢʀᴀᴍ ɪs ʜᴀᴠɪɴɢ sᴏᴍᴇ ɪɴᴛᴇʀɴᴀʟ ᴘʀᴏʙʟᴇᴍs, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
             )
         except UnMuteNeeded:
-            return await fallen.edit_text(
+            return await neko.edit_text(
                 f"» {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ɪs ᴍᴜᴛᴇᴅ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ,\n\nᴘʟᴇᴀsᴇ ᴜɴᴍᴜᴛᴇ {ASS_MENTION} ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ."
             )
 
@@ -255,4 +255,4 @@ async def play(_, message: Message):
             reply_markup=buttons,
         )
 
-    return await fallen.delete()
+    return await neko.delete()
