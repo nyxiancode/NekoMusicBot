@@ -37,7 +37,7 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 <details>
 <summary><h3>
 - <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
-</summary></h3>
+</h3>
 
 - Get your [Necessary Variables](https://github.com/nekolocal/NekoMusicBot/blob/master/sample.env)
 - Upgrade and Update by :
@@ -49,7 +49,7 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 - Install node by :
 `curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - Clone the repository by :
-`git clone https://github.com/nekolocal/FallenMusic && cd FallenMusic`
+`git clone https://github.com/nekolocal/NekoMusic && cd NekoMusic`
 - Install requirements by :
 `pip3 install -U -r requirements.txt`
 - Fill your variables in the env by :
@@ -61,15 +61,12 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 - Install tmux to keep running your bot when you close the terminal by :
 `sudo apt install tmux && tmux`
 - Finally run the bot by :
-`bash fallen`
+`bash neko`
 - For getting out from tmux session<br>
 Press `Ctrl+b` and then `d`
 
-<p align="center">
-  <img src="https://te.legra.ph/file/b09cdfe8fb553fdd976eb.jpg">
-</p>
 
-</details>
+</details></summary>
 
 ━━━━━━━━━━━━━━━━━━━━
 <h3 align="center">
