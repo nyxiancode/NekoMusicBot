@@ -15,7 +15,7 @@ async def main():
     await neko.start()
     sess = await neko.export_session_string()
     txt = f"Here is your Pyrogram {ver} String Session\n\n<code>{sess}</code>\n\nDon't share it with anyone.\nDon't forget to join @SayaNeko"
-    ok = await fallen.send_message("me", txt)
+    ok = await neko.send_message("me", txt)
     print(f"Here is your Pyrogram {ver} String Session\n{sess}\nDouble click to copy.") 
 
 
