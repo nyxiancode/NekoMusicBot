@@ -49,7 +49,7 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 - Install node by :
 `curl -fssL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - Clone the repository by :
-`git clone https://github.com/nekolocal/NekoMusic && cd NekoMusic`
+`git clone https://github.com/nekolocal/NekoMusicBot && cd NekoMusic`
 - Install requirements by :
 `pip3 install -U -r requirements.txt`
 - Fill your variables in the env by :
