@@ -32,8 +32,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
-from FallenMusic import BOT_NAME, SUDOERS, app
-from FallenMusic.Modules import ALL_MODULES
+from NekoMusic import BOT_NAME, SUDOERS, app
+from NekoMusic.Modules import ALL_MODULES
 
 
 @app.on_message(filters.command(["stats", "sysstats"]) & SUDOERS)
