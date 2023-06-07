@@ -24,7 +24,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import OWNER_ID
-from FallenMusic import SUDOERS, app
+from NekoMusic import SUDOERS, app
 
 
 @app.on_message(filters.command(["addsudo"]) & filters.user(OWNER_ID))
