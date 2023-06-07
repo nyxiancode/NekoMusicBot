@@ -23,8 +23,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import app, pytgcalls
-from FallenMusic.Helpers import _clear_, admin_check, close_key
+from NekoMusic import app, pytgcalls
+from NekoMusic.Helpers import _clear_, admin_check, close_key
 
 
 @app.on_message(filters.command(["stop", "end"]) & filters.group)
