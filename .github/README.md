@@ -20,9 +20,9 @@ _**Join Channel Saya Di Telegram [SayaNeko](https://t.me/SayaNeko)**_
 
 ━━━━━━━━━━━━━━━━━━━━
 
-<p align="center">
-  <img src="https://telegra.ph/file/a448714afd0a13d0df316.jpg">
+<p align="center"><img src="https://telegra.ph/file/0197fda020e3b2a443b04.gif">
 </p>
+
 
 <p align="center">
 <b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
