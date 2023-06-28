@@ -1,7 +1,7 @@
 {
-    "name": "ғᴀʟʟᴇɴ ダ ᴍᴜsɪᴄ",
+    "name": "NekoMusicBot",
     "description": "A VC Player Bot for telegram videochats, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/6f99c49bdb4679acad717.jpg",
+    "logo": "https://camo.githubusercontent.com/1b084fd09d95b388728390e130735ac434a8dbfb4b439ce72cea6999a553c119/68747470733a2f2f74656c656772612e70682f66696c652f3362323161353463373836623439353866323635642e6a7067",
     "keywords": [
     "python3",
     "telegram",
