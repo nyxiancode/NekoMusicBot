@@ -9,7 +9,7 @@ API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN", None)
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "120"))
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "250"))
 
 OWNER_ID = int(getenv("OWNER_ID"))
 
@@ -19,7 +19,7 @@ START_IMG = getenv("START_IMG", "https://telegra.ph/file/3b21a54c786b4958f265d.j
 SESSION = getenv("SESSION", None)
 
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NekoMenfessChat")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SayaNeko")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NekoLocal")
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5633222043").split()))
 
