@@ -63,9 +63,7 @@ async def gen_thumb(videoid, user_id):
                 title = result["title"]
                 title = re.sub("\W+", " ", title)
                 title = title.title()
-                # Replace 'FallenMusic' with 'NekoMusic'
-                title = title.replace('FallenMusic', 'NekoMusic')
-            except:
+                except:
                 title = "Unsupported Title"
             try:
                 duration = result["duration"]
